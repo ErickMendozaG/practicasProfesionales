@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://InterfazSolicitudEstadosAcademicos/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://InterfazSolicitudEstadosAcademicos/">
+
+<xs:element name="solicitarEstadoAcademicoDetallado" type="tns:solicitarEstadoAcademicoDetallado"/>
+
+<xs:element name="solicitarEstadoAcademicoDetalladoResponse" type="tns:solicitarEstadoAcademicoDetalladoResponse"/>
+
+<xs:element name="solicitarEstadoAcademicoGeneral" type="tns:solicitarEstadoAcademicoGeneral"/>
+
+<xs:element name="solicitarEstadoAcademicoGeneralResponse" type="tns:solicitarEstadoAcademicoGeneralResponse"/>
+
+<xs:complexType name="solicitarEstadoAcademicoDetallado">
+<xs:sequence>
+<xs:element name="dtoSolicitarEstadoAcademicoDetallado" type="tns:dtoSolicitarEstadoAcademicoD" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dtoSolicitarEstadoAcademicoD">
+<xs:sequence>
+<xs:element name="legajo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solicitarEstadoAcademicoDetalladoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dtoEstadoAcademicoDetalladoFRMUTN" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dtoEstadoAcademicoDetalladoFRMUTN">
+<xs:sequence>
+<xs:element name="estado" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaEstado" type="xs:string" minOccurs="0"/>
+<xs:element name="materia" type="xs:string" minOccurs="0"/>
+<xs:element name="notaFinal" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solicitarEstadoAcademicoGeneral">
+<xs:sequence>
+<xs:element name="dtoSolicitarEstadoAcademicoGeneral" type="tns:dtoSolicitarEstadoAcademicoG" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dtoSolicitarEstadoAcademicoG">
+<xs:sequence>
+<xs:element name="nroDNI" type="xs:int"/>
+<xs:element name="tipoDNI" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="solicitarEstadoAcademicoGeneralResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dtoEstadoAcademicoGeneralFRMUTN" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dtoEstadoAcademicoGeneralFRMUTN">
+<xs:sequence>
+<xs:element name="carrera" type="xs:string" minOccurs="0"/>
+<xs:element name="estadoAcademico" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaBaja" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaIngreso" type="xs:string" minOccurs="0"/>
+<xs:element name="legajo" type="xs:int"/>
+<xs:element name="planEstudio" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
