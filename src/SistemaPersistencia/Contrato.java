@@ -5,12 +5,13 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.Vector;
 
-/* @author MACROSOFT:
+/* @author GrowingIdeas:
   
-   * CARO, Erica
-   * FERREYRA, Cristian
+   * MORÓN, Sebastián
+   * MARINOZI, Pablo
+   * MARTINEZ, Maribel
    * MENDOZA, Erick
-   * PONCE, Vanesa
+   * SANCHEZ, Gonzalo
   
 */
 
