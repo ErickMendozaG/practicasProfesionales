@@ -3,12 +3,12 @@ package SistemaPersistencia;
 
 import java.sql.Date;
 
-/* @author MACROSOFT:
+/* @author GrowingIdeas:
   
-   * CARO, Erica
-   * FERREYRA, Cristian
+   * Maribel, Martinez
+   * Moron, Sebastian
    * MENDOZA, Erick
-   * PONCE, Vanesa
+   
   
 */
 
