@@ -1,15 +1,16 @@
-
+﻿
 package SistemaPersistencia;
 
 import java.util.Random;
 import java.util.UUID;
 
-/* @author MACROSOFT:
+/* @author GrowingIdeas:
   
-   * CARO, Erica
-   * FERREYRA, Cristian
+   * MARINOZI, Pablo
+   * MARTINEZ, Maribel
+   * MORÓN, Sebastián
+   * SANCHEZ, Gonzalo
    * MENDOZA, Erick
-   * PONCE, Vanesa
   
 */
 
